@@ -13,14 +13,12 @@ ci_build:
   tags:
     - test runner
   script:
-    - cd HelloWorld
     - ant clean
-    - ant build
+    - ant package
 
 ci_test:
   stage: test
   tags:
     - test runner
   script:
-    - cd HelloWorld
-    - ant clean build TestHelloWorld
+    - ant clean package TestHelloWorld
