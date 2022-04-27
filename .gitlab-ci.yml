@@ -10,6 +10,8 @@ stages:
 
 ci_build:
   stage: build
+  tags:
+    - test runner
   script:
     - cd HelloWorld
     - ant clean
@@ -17,6 +19,8 @@ ci_build:
 
 ci_test:
   stage: test
+  tags:
+    - test runner
   script:
     - cd HelloWorld
     - ant clean build TestHelloWorld
