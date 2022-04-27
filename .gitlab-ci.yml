@@ -13,5 +13,4 @@ ci_build:
   tags:
     - test runner
   script:
-    - ant clean
     - ant package
