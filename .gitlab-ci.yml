@@ -15,10 +15,3 @@ ci_build:
   script:
     - ant clean
     - ant package
-
-ci_test:
-  stage: test
-  tags:
-    - test runner
-  script:
-    - ant clean package TestHelloWorld
