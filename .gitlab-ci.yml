@@ -14,7 +14,8 @@ build:
         - echo 'Building...'
  #       - docker info
         - docker build -t test1:latest .
-        - docker push test1:latest 192.168.1.102:5000/BuildImage:latest
+        - docker tag test1:latest 192.168.1.102:5000/BuildImage:latest
+        - docker push 192.168.1.102:5000/BuildImage:latest
 
 test:
     stage: test
