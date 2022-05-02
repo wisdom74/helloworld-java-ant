@@ -7,12 +7,12 @@ stages:
 
 build:
     stage: build
-    image: frekele/ant:latest
+ #   image: frekele/ant:latest
     tags:
         - ant-runner
     script: 
         - echo 'Building...'
-        - docker info
+ #       - docker info
         - ant clean
 
 test:
