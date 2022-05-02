@@ -1,5 +1,5 @@
-services:
-    - frekele/ant:latest
+#services:
+ #   - frekele/ant:latest
     
 stages:
     - build
