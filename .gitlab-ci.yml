@@ -1,16 +1,18 @@
-image: openjdk:8
-
-before_script:
-  - apt-get update
-  - apt-get -y install ant
-
 stages:
-  - build
-  - test
+    - build
+    - test
 
-ci_build:
-  stage: build
-  tags:
-    - test runner
-  script:
-    - ant package
+test:
+    stage: test
+    tags:
+        - ant-runner
+    script: 
+        - echo 'testing'
+
+build:
+    stage: build
+    tags:
+        - ant-runner
+    script: 
+        - echo 'Building...'
+        - docker info
