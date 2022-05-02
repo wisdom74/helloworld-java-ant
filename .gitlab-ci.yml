@@ -9,6 +9,7 @@ build:
     script: 
         - echo 'Building...'
         - docker info
+        - ant clean
 
 test:
     stage: test
