@@ -1,3 +1,6 @@
+services:
+    - frekele/ant:latest
+    
 stages:
     - build
     - test
