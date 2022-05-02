@@ -2,13 +2,6 @@ stages:
     - build
     - test
 
-test:
-    stage: test
-    tags:
-        - ant-runner
-    script: 
-        - echo 'testing'
-
 build:
     stage: build
     tags:
@@ -16,3 +9,10 @@ build:
     script: 
         - echo 'Building...'
         - docker info
+
+test:
+    stage: test
+    tags:
+        - ant-runner
+    script: 
+        - echo 'Testing'
