@@ -17,5 +17,5 @@ test:
     tags:
         - ant-runner
     script: 
-        - echo 'Testing'
+        - echo 'Testing...'
         - docker info
